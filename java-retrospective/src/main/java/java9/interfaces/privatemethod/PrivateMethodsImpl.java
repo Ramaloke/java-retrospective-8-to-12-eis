@@ -1,5 +1,7 @@
 package java9.interfaces.privatemethod;
 
+import static java9.interfaces.privatemethod.PrivateMethods.*;
+
 public class PrivateMethodsImpl implements PrivateMethods {
    private String name;
 
@@ -25,8 +27,8 @@ public class PrivateMethodsImpl implements PrivateMethods {
 
     @Override
     public String toString() {
-        return "[Name: " + (PrivateMethods.isValidName(getName()) ? getName() : "no name")
-                + ", Surname: " + (PrivateMethods.isValidSurname(getSurname()) ? getSurname() : "no surname")
+        return "[Name: " + (isValidName(getName()) ? getName() : "no name")
+                + ", Surname: " + (isValidSurname(getSurname()) ? getSurname() : "no surname")
                 + ", Age: " + getAge()
                 + ", Lucky Number: " + getLuckyNumber()
                 + "]";
