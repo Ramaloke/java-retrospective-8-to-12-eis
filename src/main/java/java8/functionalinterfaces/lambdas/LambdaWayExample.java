@@ -8,7 +8,7 @@ import java.util.List;
 public class LambdaWayExample {
     public static void printMalePeople(List<Person> people) {
         people.stream()
-                .filter(p -> p.getSex().equals(Gender.MALE))
+                .filter(p -> p.getGender().equals(Gender.MALE))
                 .forEach(p -> System.out.println(p));
     }
 

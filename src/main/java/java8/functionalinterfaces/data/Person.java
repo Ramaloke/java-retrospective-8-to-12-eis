@@ -2,11 +2,11 @@ package java8.functionalinterfaces.data;
 
 public class Person {
     private String name;
-    private Gender sex;
+    private Gender gender;
 
-    public Person(String name, Gender sex) {
+    public Person(String name, Gender gender) {
         this.name = name;
-        this.sex = sex;
+        this.gender = gender;
     }
 
     public String getName() {
@@ -17,16 +17,16 @@ public class Person {
         this.name = name;
     }
 
-    public Gender getSex() {
-        return sex;
+    public Gender getGender() {
+        return gender;
     }
 
-    public void setSex(Gender sex) {
-        this.sex = sex;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     @Override
     public String toString() {
-        return "[Name : " + name + "; Sex : " + sex.name() + "]";
+        return "[Name : " + name + "; Gender : " + gender.name() + "]";
     }
 }

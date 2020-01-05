@@ -9,7 +9,7 @@ public class OldWayExample {
     public static void printMalePeople(List<Person> people) {
         List<Person> malePeople = new ArrayList<>();
         for (Person p : people) {
-            if(p.getSex() == Gender.MALE) {
+            if(p.getGender() == Gender.MALE) {
                 malePeople.add(p);
             }
         }
