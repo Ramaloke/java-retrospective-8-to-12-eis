@@ -12,7 +12,7 @@ public class NewSwitchExample {
     }
 
     //Java 12 expression way
-    //Uncomment method body if you use JDK 12 and experimental feature is enabled
+    //Uncomment method body if you use JDK 12 and preview feature is enabled
     private static void monthsSwitchExpressionWay(Month month) {
         /*String result = switch(month) {
             case DECEMBER, JANUARY, FEBRUARY -> "Winter";
@@ -26,7 +26,7 @@ public class NewSwitchExample {
     }
 
     //Java 12 statement way
-    //Uncomment method body if you use JDK 12 and experimental feature is enabled
+    //Uncomment method body if you use JDK 12 and preview feature is enabled
     private static void monthsSwitchStatementWay(Month month) {
         /*String result = switch (month) {
             case DECEMBER, JANUARY, FEBRUARY:

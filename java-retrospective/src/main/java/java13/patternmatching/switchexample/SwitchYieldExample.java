@@ -10,7 +10,7 @@ public class SwitchYieldExample {
     }
 
     //Java 13, yield example
-    //Uncomment method body if you use JDK 13 and experimental feature is enabled
+    //Uncomment method body if you use JDK 13 and preview feature is enabled
     private static void monthsSwitchYield(Month month) {
         /*String result = switch (month) {
             case DECEMBER, JANUARY, FEBRUARY:
