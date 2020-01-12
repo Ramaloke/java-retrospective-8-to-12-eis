@@ -1,4 +1,4 @@
-package java12.switchexample;
+package java12.patternmatching.switchexample;
 
 import java.time.Month;
 
