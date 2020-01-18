@@ -6,24 +6,24 @@ import java8.functionalinterfaces.data.Person;
 import java.util.Arrays;
 import java.util.List;
 
-public class OldNewWayExamplesMain {
+public class BeforeAfterExamplesMain {
     public static void main(String[] args) {
         List<Person> people = Arrays.asList(
                 new Person("John Doe", Gender.MALE),
-                new Person("Milissa Dunne", Gender.FEMALE),
+                new Person("Melissa Dunne", Gender.FEMALE),
                 new Person("Darin Vaz", Gender.MALE),
                 new Person("Adella Mock", Gender.FEMALE)
         );
         System.out.println("Old way example:");
         System.out.println("Filter");
-        OldWayExample.printMalePeople(people);
+        BeforeLambdasMethods.printMalePeople(people);
         System.out.println("Sort");
-        OldWayExample.printSortedPeopleByName(people);
+        BeforeLambdasMethods.printSortedPeopleByName(people);
 
         System.out.println("\nNew way example:");
         System.out.println("Filter");
-        LambdaWayExample.printMalePeople(people);
+        LambdaWayMethods.printMalePeople(people);
         System.out.println("Sort");
-        LambdaWayExample.printSortedPeopleByName(people);
+        LambdaWayMethods.printSortedPeopleByName(people);
     }
 }

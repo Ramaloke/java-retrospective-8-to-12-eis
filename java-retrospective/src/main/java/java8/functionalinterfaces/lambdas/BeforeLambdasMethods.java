@@ -5,7 +5,7 @@ import java8.functionalinterfaces.data.Person;
 
 import java.util.*;
 
-public class OldWayExample {
+public class BeforeLambdasMethods {
     public static void printMalePeople(List<Person> people) {
         List<Person> malePeople = new ArrayList<>();
         for (Person p : people) {

@@ -1,6 +1,6 @@
-package java8.functionalinterfaces.interfaces;
+package java8.functionalinterfaces.interfaces.sam;
 
-public class Main {
+public class FunctionalFooMain {
     public static void main(String[] args) {
         //Old way
         FunctionalFoo oldFoo = new FunctionalFoo() {

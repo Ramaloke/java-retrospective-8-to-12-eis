@@ -1,6 +1,6 @@
 package java8.interfaces.staticmethod;
 
-public class Main {
+public class StaticMethodsMain {
     public static void main(String[] args) {
         StaticMethods imp = new StaticMethodsImp();
 

@@ -7,11 +7,13 @@ public class ForEachExample {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(1, 2, 3);
 
+        System.out.println("Test data: " + numbers);
+        System.out.println("=======");
         oldWayIterator(numbers);
         System.out.println("=======");
         newWayIterator(numbers);
         System.out.println("=======");
-        myNewWayIterator(numbers);
+        consumerNewWayIterator(numbers);
     }
 
     public static void oldWayIterator(List<Integer> list) {
@@ -26,7 +28,7 @@ public class ForEachExample {
         list.forEach(v -> System.out.println("Java 8 forEach value: " + v));
     }
 
-    public static void myNewWayIterator(List<Integer> list) {
+    public static void consumerNewWayIterator(List<Integer> list) {
         list.forEach(new PlusOneConsumer());
     }
 }

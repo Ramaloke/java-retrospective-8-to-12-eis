@@ -1,6 +1,6 @@
 package java8.interfaces.defaultmethod;
 
-public class Main {
+public class DefaultMethodsMain {
 
     public static void main(String[] args) {
         DefaultMethods methods = new DefaultMethodsImpl();

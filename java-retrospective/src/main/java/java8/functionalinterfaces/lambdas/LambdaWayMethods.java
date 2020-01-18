@@ -5,7 +5,7 @@ import java8.functionalinterfaces.data.Person;
 
 import java.util.List;
 
-public class LambdaWayExample {
+public class LambdaWayMethods {
     public static void printMalePeople(List<Person> people) {
         people.stream()
                 .filter(p -> p.getGender().equals(Gender.MALE))

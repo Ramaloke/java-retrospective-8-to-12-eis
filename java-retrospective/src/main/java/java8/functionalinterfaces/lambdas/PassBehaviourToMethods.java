@@ -10,10 +10,10 @@ public class PassBehaviourToMethods {
         List<String> words = Arrays.asList("First", "Second", "Third", "One", "Two", "Three");
 
         //strings with more than 3 symbols
-        System.out.println(getStringsWithCondition(words, s -> s.length() > 3));
+        System.out.println("More than 3 symbols: " + getStringsWithCondition(words, s -> s.length() > 3));
 
         //strings started with "T"
-        System.out.println(getStringsWithCondition(words, s -> s.startsWith("T")));
+        System.out.println("Start with 'T': " + getStringsWithCondition(words, s -> s.startsWith("T")));
     }
 
     public static List<String> getStringsWithCondition(List<String> data, Predicate<String> condition) {
