@@ -21,7 +21,7 @@ public class InternalModuleInterfaceImpl implements ModuleInterface {
 
     public void callMethodByName(Object object, String methodName) throws Exception {
         //Reflexive access to private printMethod of InternalModuleInterfaceImpl.java
-        Method method = object.getClass().getDeclaredMethod("privateMethod");
+        Method method = object.getClass().getDeclaredMethod(methodName);
         method.setAccessible(true);
         method.invoke(object);
     }
