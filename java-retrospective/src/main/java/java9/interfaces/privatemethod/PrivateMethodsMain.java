@@ -1,6 +1,6 @@
 package java9.interfaces.privatemethod;
 
-public class Main {
+public class PrivateMethodsMain {
     public static void main(String[] args) {
         PrivateMethods instance1 = new PrivateMethodsImpl("John", "");
         System.out.println(instance1);
