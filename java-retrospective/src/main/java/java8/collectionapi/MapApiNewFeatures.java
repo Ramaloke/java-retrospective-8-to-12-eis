@@ -61,6 +61,14 @@ public class MapApiNewFeatures {
 
     private static void getOrDefault() {
         Map<String, String> map = getTestDataMap();
+
+        //Old way
+        String nickname = map.get("Nickname");
+        if(nickname == null) {
+            System.out.println("get: -> Value for key 'Nickname': " + nickname);
+        }
+
+        //New way
         String value = map.getOrDefault("Nickname", "No value found for the key");
         System.out.println("getOrDefault: -> Value for key 'Nickname': " + value);
     }
