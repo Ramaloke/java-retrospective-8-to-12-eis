@@ -17,7 +17,7 @@ public class TeeingCollectorExample {
                         Collectors.filtering(i -> (i%3 == 0), Collectors.toList()),
 
                         //merger
-                        (List<Integer> list1, List<Integer> list2) -> List.of(list1, list2)
+                        (list1, list2) -> List.of(list1, list2)
 
                 ));
 
