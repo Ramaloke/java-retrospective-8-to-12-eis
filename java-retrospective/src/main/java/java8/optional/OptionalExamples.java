@@ -1,6 +1,10 @@
 package java8.optional;
 
+import java8.optional.data.Person;
+
+import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 
 public class OptionalExamples {
     public static void main(String[] args) {
@@ -34,6 +38,7 @@ public class OptionalExamples {
 
         //Optional.flatMap()
         optionalFlatMap(42);
+        anotherOptionalFlatMap(List.of(new Person(null, 20)));
     }
 
     private static void optionalOf(String value) {
@@ -109,6 +114,18 @@ public class OptionalExamples {
         Optional<Optional<Integer>> emptyOptionalOfOptional = Optional.of(Optional.empty());
         Optional<String> emptyOptional = emptyOptionalOfOptional.flatMap(opt -> opt.map(String::valueOf));
         System.out.println("Empty Optional.flatMap -> map: " + emptyOptional);
+    }
 
+    private static void anotherOptionalFlatMap(List<Person> list) {
+        Optional<String> NPE = list.stream()
+                .map(Person::getName)
+                .findFirst(); //NPE
+
+        String noNPE = list.stream()
+                .map(Person::getName)
+                .map(Optional::ofNullable)
+                .findFirst()
+                .flatMap(Function.identity())
+                .orElse("no name");
     }
 }
