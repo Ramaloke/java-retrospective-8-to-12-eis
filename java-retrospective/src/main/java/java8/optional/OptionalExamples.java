@@ -117,9 +117,9 @@ public class OptionalExamples {
     }
 
     private static void anotherOptionalFlatMap(List<Person> list) {
-        Optional<String> NPE = list.stream()
+        /*Optional<String> NPE = list.stream()
                 .map(Person::getName)
-                .findFirst(); //NPE
+                .findFirst(); //NPE*/
 
         String noNPE = list.stream()
                 .map(Person::getName)
